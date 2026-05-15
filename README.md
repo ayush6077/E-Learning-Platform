@@ -1,4 +1,4 @@
-# EduPulse — E-Learning Platform 🚀
+# EduPulse — E-Learning Platform 
 
 A gamified e-learning platform with XP, leaderboards, quizzes, and performance analytics.
 Built with **MongoDB + Express + React + Node.js (MERN)**.
