@@ -1,0 +1,43 @@
+.lesson-page { display: flex; flex-direction: column; height: 100vh; overflow: hidden; background: var(--bg); }
+.lesson-topbar { height: 56px; background: var(--bg-2); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 20px; padding: 0 24px; flex-shrink: 0; z-index: 10; }
+.lesson-back { color: var(--accent); text-decoration: none; font-size: 14px; font-weight: 600; white-space: nowrap; }
+.lesson-course-title { flex: 1; font-family: var(--font-display); font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.lesson-progress-bar-wrap { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.lesson-pct { font-size: 12px; color: var(--accent); font-weight: 600; white-space: nowrap; }
+.lesson-layout { display: flex; flex: 1; overflow: hidden; }
+.lesson-sidebar { width: 300px; flex-shrink: 0; background: var(--bg-2); border-right: 1px solid var(--border); overflow-y: auto; display: flex; flex-direction: column; }
+.lesson-sidebar-header { padding: 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+.lesson-sidebar-header h3 { font-family: var(--font-display); font-size: 15px; font-weight: 700; }
+.lesson-sidebar-count { font-size: 12px; color: var(--text-3); }
+.lesson-modules-list { overflow-y: auto; padding: 8px 0; }
+.lesson-module-group { }
+.lesson-module-title { padding: 12px 20px 6px; display: flex; flex-direction: column; }
+.lesson-module-title span:first-child { font-size: 10px; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+.lesson-module-name { font-size: 13px; font-weight: 600; color: var(--text-2); margin-top: 2px; }
+.lesson-item { width: 100%; background: none; border: none; color: var(--text-2); padding: 10px 20px; cursor: pointer; display: flex; align-items: center; gap: 10px; text-align: left; transition: all 0.15s; font-size: 13px; }
+.lesson-item:hover { background: var(--surface-hover); color: var(--text); }
+.lesson-item.active { background: rgba(124,111,255,0.1); color: var(--accent); border-left: 2px solid var(--accent); }
+.lesson-item.done { color: var(--accent-3); }
+.lesson-item-icon { width: 18px; height: 18px; border-radius: 50%; background: var(--surface); display: flex; align-items: center; justify-content: center; font-size: 8px; flex-shrink: 0; }
+.lesson-item.done .lesson-item-icon { background: rgba(0,229,201,0.2); color: var(--accent-3); }
+.lesson-item.active .lesson-item-icon { background: rgba(124,111,255,0.2); color: var(--accent); }
+.lesson-item-title { flex: 1; line-height: 1.4; }
+.lesson-item-dur { font-size: 11px; color: var(--text-3); white-space: nowrap; }
+.lesson-main { flex: 1; overflow-y: auto; display: flex; flex-direction: column; }
+.lesson-video-area { background: #000; flex-shrink: 0; }
+.lesson-video-placeholder { aspect-ratio: 16/9; max-height: 400px; background: linear-gradient(135deg, #0d0d20, #1a1a40); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; color: var(--text-2); cursor: pointer; }
+.lesson-play-btn { width: 64px; height: 64px; border-radius: 50%; background: rgba(124,111,255,0.3); border: 2px solid var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; transition: all 0.2s; }
+.lesson-play-btn:hover { background: rgba(124,111,255,0.5); transform: scale(1.05); }
+.lesson-content-area { padding: 32px; display: flex; flex-direction: column; gap: 20px; max-width: 800px; }
+.lesson-content-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap; }
+.lesson-title { font-family: var(--font-display); font-size: 28px; font-weight: 800; letter-spacing: -0.5px; }
+.lesson-meta { color: var(--text-3); font-size: 13px; margin-top: 6px; }
+.btn-done { background: rgba(0,229,201,0.15) !important; color: var(--accent-3) !important; box-shadow: none !important; cursor: default !important; }
+.lesson-description { padding: 24px; }
+.lesson-description h3 { font-family: var(--font-display); font-size: 16px; margin-bottom: 12px; }
+.lesson-description p { color: var(--text-2); font-size: 14px; line-height: 1.8; }
+.lesson-xp-card { padding: 16px 24px; display: flex; align-items: center; gap: 16px; }
+.lesson-xp-icon { font-size: 28px; }
+.lesson-xp-card h4 { font-family: var(--font-display); font-size: 15px; margin-bottom: 4px; }
+.lesson-nav { display: flex; gap: 12px; }
+@media (max-width: 768px) { .lesson-layout { flex-direction: column; } .lesson-sidebar { width: 100%; height: 200px; border-right: none; border-bottom: 1px solid var(--border); } }
